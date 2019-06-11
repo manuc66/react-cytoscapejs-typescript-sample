@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-// @ts-ignore
 import CytoscapeComponent from "react-cytoscapejs";
 
 const App: React.FC = () => {
