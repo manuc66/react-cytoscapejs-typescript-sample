@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+// @ts-ignore
+import CytoscapeComponent from "react-cytoscapejs";
 
 const App: React.FC = () => {
+  const elements = [
+    { data: { id: "one", label: "Node 1" }, position: { x: 0, y: 0 } },
+    { data: { id: "two", label: "Node 2" }, position: { x: 100, y: 0 } },
+    {
+      data: { source: "one", target: "two", label: "Edge from Node1 to Node2" }
+    }
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CytoscapeComponent
+      elements={elements}
+      style={{ width: "600px", height: "600px" }}
+    />
   );
-}
+};
 
 export default App;
