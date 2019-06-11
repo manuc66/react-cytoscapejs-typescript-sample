@@ -8,6 +8,7 @@
     "@types/react": "16.8.19",
     "@types/react-dom": "16.8.4",
     "react": "^16.8.6",
+    "react-cytoscapejs": "^1.1.0",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "typescript": "3.5.1"
