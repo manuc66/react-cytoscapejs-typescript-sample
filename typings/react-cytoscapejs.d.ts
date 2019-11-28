@@ -11,6 +11,15 @@ declare module "react-cytoscapejs" {
     layout?: LayoutOptions;
     stylesheet?: Stylesheet | Stylesheet[] | string;
     className?: string;
+    zoom?: number;
+    pan?: Position;
+    minZoom?: number;
+    maxZoom?: number;
+    zoomingEnabled?: boolean;
+    userZoomingEnabled?: boolean;
+    boxSelectionEnabled?: boolean;
+    autoungrabify?: boolean;
+    autounselectify?: boolean;
   };
 
   interface CytoscapeComponentInterface extends FC<CytoscapeComponentProps> {
