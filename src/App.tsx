@@ -12,7 +12,7 @@ const App: React.FC = () => {
   ];
   return (
     <CytoscapeComponent
-      elements={elements}
+      elements={CytoscapeComponent.normalizeElements(elements)}
       style={{ width: "600px", height: "600px" }}
     />
   );

@@ -1244,6 +1244,11 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/cytoscape@^3.8.6":
+  version "3.8.6"
+  resolved "https://registry.yarnpkg.com/@types/cytoscape/-/cytoscape-3.8.6.tgz#2f8c0a6a1300df7609dd97b41b9d93a5501e985a"
+  integrity sha512-oPP1SyTcotZ+HOmNSaZ/cVqykn9HMsw49kCW7Mnhrg3aQnG33NkAx+YRffhCoWvWJs9ZeTaGfdMsLQXwq7moDQ==
+
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"

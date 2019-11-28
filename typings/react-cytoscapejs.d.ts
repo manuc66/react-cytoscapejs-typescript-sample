@@ -1,16 +1,10 @@
 declare module "react-cytoscapejs" {
-  import cytoscape from "cytoscape";
-  import {
-    Stylesheet,
-    LayoutOptions,
-    ElementDefinition,
-    ElementsDefinition
-  } from "cytoscape";
-  import { FC, Component, CSSProperties } from "react";
+  import cytoscape, { NodeDataDefinition, EdgeDataDefinition } from "cytoscape";
+  import { Stylesheet, LayoutOptions, ElementDefinition } from "cytoscape";
+  import { FC, CSSProperties } from "react";
 
   type CytoscapeComponentProps = {
     id?: string;
-    key?: string;
     cy?: (cy: cytoscape.Core) => void;
     style?: CSSProperties;
     elements: ElementDefinition[];
@@ -19,7 +13,14 @@ declare module "react-cytoscapejs" {
     className?: string;
   };
 
-  const CytoscapeComponent: FC<CytoscapeComponentProps>;
+  interface CytoscapeComponentInterface extends FC<CytoscapeComponentProps> {
+    static normalizeElements(data: {
+      nodes: ElementDefinition[];
+      edges: ElementDefinition[];
+    } | ElementDefinition[]): ElementDefinition[];
+  }
+
+  const CytoscapeComponent: CytoscapeComponentInterface;
 
   export = CytoscapeComponent;
 }
