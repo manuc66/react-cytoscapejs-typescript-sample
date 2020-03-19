@@ -8,6 +8,7 @@
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.8.4",
     "@types/cytoscape": "^3.8.6",
+    "prettier": "^1.19.1",
     "react": "^16.8.6",
     "react-cytoscapejs": "^1.1.0",
     "react-dom": "^16.8.6",
